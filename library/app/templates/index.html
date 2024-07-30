@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block start %}
+<div class="container">
+    <h1 id="bk">Books</h1>
+    {% for book in books %}
+    <div class="book">
+    <span id="b"><strong>Book Name : </strong>{{ book.title }}</span>
+    <span id="b"><strong>Summary: </strong>{{ book.summary }}</span>
+    <span id="b"><strong>Pages : </strong>{{ book.pages }}</span>
+    <span id="b"><strong>Author : </strong>{{ book.author }}</span>
+    <span id="b"><strong>availability : </strong>{{ book.availability }}</span>
+    <span id="b"><strong>authorid : </strong>{{ book.author_id }}</span>
+    <span id="b"><strong>availability : </strong>{{ book.availability }}</span>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
